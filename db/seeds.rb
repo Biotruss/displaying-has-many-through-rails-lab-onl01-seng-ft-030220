@@ -23,6 +23,7 @@ Appointment.create([
   {appointment_datetime: DateTime.new(2016, 05, 31, 17, 00, 0), patient: homer, doctor: hawkeye},
   {appointment_datetime: DateTime.new(2017, 06, 03, 10, 00, 0), patient: marge, doctor: meredith}
 ])
-rails g resource Appointment  
-t.integer  "patient_id"
-t.integer  "doctor_id"
+rails g resource Appointment appointment_datetime:datetime patient_id:integer doctor_id:integer
+t.datetime "appointment_datetime"
+    t.integer  "patient_id"
+    t.integer  "doctor_id"
