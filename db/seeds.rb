@@ -23,4 +23,6 @@ Appointment.create([
   {appointment_datetime: DateTime.new(2016, 05, 31, 17, 00, 0), patient: homer, doctor: hawkeye},
   {appointment_datetime: DateTime.new(2017, 06, 03, 10, 00, 0), patient: marge, doctor: meredith}
 ])
-rails g resource Appointment appointment_datetime:datetime patient_id:integer doctor_id:integer --no-test-framework
+rails g resource 
+t.string   "name"
+    t.string   "department"
